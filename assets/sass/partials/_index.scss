@@ -1,0 +1,54 @@
+//Estilos Index
+
+.categories{
+    margin-top: 3rem;
+
+    &__individual{
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black,.6);
+        }
+
+        &--relojeria{
+            background-image: url("../assets/img/index/relojeria.jpg");
+        }
+        &--joyeria{
+            background-image: url("../assets/img/index/joyeria.jpg");
+        }
+        &--accesorios{
+            background-image: url("../assets/img/index/accesorios.jpg");
+        }
+
+
+        h2{
+            color:$white;
+            position: relative;
+            z-index: 2;
+            font-family: $Montserrat;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+}
+
+.populares{
+    margin-top: 3rem;
+
+    h2{
+        text-align: center;
+        font-weight: 300;
+    }
+}

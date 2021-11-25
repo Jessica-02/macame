@@ -1,0 +1,79 @@
+header{
+    .logoDesk{
+        
+        @include movil0{
+            display: none;
+        }
+
+        @include movil768{
+            display: block;
+            max-width: 250px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+
+    .navbar{
+        justify-content: center;
+
+        .navbar-brand{
+            @include movil768{
+                display: none;
+            }
+            .logo{
+                max-width: 350px;
+                width: 100%;
+            }
+        }
+
+        .navbar-collapse {
+            @include movil768{
+                justify-content: center;
+
+            }
+
+            .navbar-nav{
+
+                @include movil768{
+                    margin-top: 1rem;
+                    max-width: 1200px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .nav-item{
+                    @include movil768{
+                        border-right: 1px solid $brown;
+                        width: 100%;
+                        
+                        &:last-child{
+                            border-right: none;
+                            text-align: right;
+                        }
+
+                        &:first-child{
+                            text-align: left;
+                        }
+                    }
+
+                    a{
+                        color: $brown;
+                        font-family: $Montserrat;
+                        text-transform: uppercase;
+                        text-align: center;
+                        display: block;
+
+                        &:hover{
+                            transition: all .3s ease;
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
