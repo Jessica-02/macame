@@ -1,11 +1,26 @@
-header{
-    .logoDesk{
-        
-        @include movil0{
+header {
+    .marcas,.marcasMovil {
+        margin-top: 1rem;
+
+        img {
+            max-width: 180px;
+            width: 100%;
+
+            &.right {
+                @include movil768 {
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .logoDesk {
+
+        @include movil0 {
             display: none;
         }
 
-        @include movil768{
+        @include movil768 {
             display: block;
             max-width: 250px;
             width: 100%;
@@ -14,28 +29,64 @@ header{
         }
     }
 
-    .navbar{
+    .navbar {
         justify-content: center;
 
-        .navbar-brand{
-            @include movil768{
+        @include movil0{
+            box-shadow: 0 0 10px $grey;
+        }
+
+        @include movil768{
+            box-shadow: none;
+        }
+
+        .navbar-toggler{
+            i{
+                font-size: 2rem;
+                color: $brown;
+            }
+
+            &:focus{
+                box-shadow: 0 0 2px 0rem $brown;
+            }
+        }
+
+
+        .navbar-brand {
+
+            @include movil0{
+                display: block;
+            }
+
+            @include movil768 {
                 display: none;
             }
-            .logo{
-                max-width: 350px;
-                width: 100%;
+
+            .logo {
+
+                @include movil0{
+                    max-width: 150px;
+                    width: 100%;
+                }
+
+                @include movil768 {
+                    max-width: 350px;
+                    width: 100%;
+                }
+
+                
             }
         }
 
         .navbar-collapse {
-            @include movil768{
+            @include movil768 {
                 justify-content: center;
 
             }
 
-            .navbar-nav{
+            .navbar-nav {
 
-                @include movil768{
+                @include movil768 {
                     margin-top: 1rem;
                     max-width: 1200px;
                     width: 100%;
@@ -43,29 +94,37 @@ header{
                     justify-content: space-between;
                 }
 
-                .nav-item{
-                    @include movil768{
+                .nav-item {
+                    @include movil768 {
                         border-right: 1px solid $brown;
                         width: 100%;
-                        
-                        &:last-child{
+
+                        &:last-child {
                             border-right: none;
                             text-align: right;
                         }
 
-                        &:first-child{
+                        &:first-child {
                             text-align: left;
                         }
                     }
 
-                    a{
+                    a {
                         color: $brown;
                         font-family: $Montserrat;
                         text-transform: uppercase;
-                        text-align: center;
+                        
                         display: block;
 
-                        &:hover{
+                        @include movil0{
+                            text-align: left;
+                        }
+
+                        @include movil768{
+                            text-align: center;
+                        }
+
+                        &:hover {
                             transition: all .3s ease;
                             color: $grey;
                         }
@@ -75,5 +134,34 @@ header{
 
 
         }
+    }
+
+    .marcas{
+        @include movil0{
+            display: none;
+        }
+
+        @include movil768{
+            display: block;
+        }
+    }
+
+    .marcasMovil{
+        @include movil0{
+            display: block;
+
+        }
+
+        .right{
+            @include movil0{
+                float: right;
+    
+            }
+        }
+
+        @include movil768{
+            display: none;
+        }
+
     }
 }

@@ -30,11 +30,11 @@ $(document).ready(function(){
             }
         })
 
-        $('#productosPopulares').owlCarousel({
+        $('#indexPrincipalMovil').owlCarousel({
             loop:true,
-            autoplay: true,
-            margin:150,
-            nav:false,
+            autoplay: false,
+            margin:10,
+            nav:true,
             dots: true,
             autoplayHoverPause: true,
             autoplaySpeed: 1500,
@@ -43,7 +43,43 @@ $(document).ready(function(){
                     items:1
                 },
                 600:{
-                    items:2
+                    items:1
+                },
+
+                900:{
+                    items:1                },
+
+                1200:{
+                    items:1
+                },
+
+                1500:{
+                    items:1
+                }
+            }
+        })
+
+        $('#productosPopulares').owlCarousel({
+            loop:true,
+            autoplay: true,
+            margin:150,
+            nav:true,
+            dots: true,
+            autoplayHoverPause: true,
+            autoplaySpeed: 1500,
+            responsive:{
+                0:{
+                    items:2,
+                    margin:50
+                },
+                600:{
+                    items:2,
+                    margin:50
+                },
+
+                700:{
+                    items:3,
+                    margin:50
                 },
 
                 900:{
