@@ -36,7 +36,7 @@ header .marcas, header .marcasMovil {
 }
 
 header .marcas img, header .marcasMovil img {
-  max-width: 180px;
+  max-width: 130px;
   width: 100%;
 }
 
@@ -66,6 +66,7 @@ header .navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 0px) {
@@ -83,7 +84,7 @@ header .navbar {
 }
 
 header .navbar .navbar-toggler i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #c49a6d;
 }
 
@@ -126,8 +127,17 @@ header .navbar .navbar-toggler:focus {
   }
 }
 
+@media only screen and (min-width: 0px) {
+  header .navbar .navbar-collapse .navbar-nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   header .navbar .navbar-collapse .navbar-nav {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     margin-top: 1rem;
     max-width: 1200px;
     width: 100%;
@@ -154,7 +164,7 @@ header .navbar .navbar-toggler:focus {
   }
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item a {
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #c49a6d;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -162,18 +172,24 @@ header .navbar .navbar-collapse .navbar-nav .nav-item a {
 }
 
 @media only screen and (min-width: 0px) {
-  header .navbar .navbar-collapse .navbar-nav .nav-item a {
+  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: left;
+    border-bottom: 1px solid #c49a6d;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  header .navbar .navbar-collapse .navbar-nav .nav-item a {
+  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: center;
+    border-bottom: 0;
   }
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.borderOut {
+  border-bottom: 0;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   color: #666666;
@@ -223,11 +239,13 @@ header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
 @media only screen and (min-width: 0px) {
   .footer h4 {
     text-align: center;
+    margin-top: 1rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .footer h4 {
+    margin-top: 0;
     text-align: left;
   }
 }
@@ -300,6 +318,22 @@ header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
   left: 0;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.footer ul.socilaFooter li a.contactoFooter {
+  position: relative;
+}
+
+@media only screen and (min-width: 0px) {
+  .footer ul.socilaFooter li a.contactoFooter {
+    left: -.65rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .footer ul.socilaFooter li a.contactoFooter {
+    left: 0;
+  }
 }
 
 .footer ul.socilaFooter li a i {

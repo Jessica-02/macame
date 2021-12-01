@@ -8,9 +8,11 @@
 
         @include movil0{
             text-align: center;
+            margin-top: 1rem;
         }
 
         @include movil1200{
+            margin-top: 0;
             text-align: left;
         }
     }
@@ -75,6 +77,18 @@
                     position: relative;
                     left: 0;
                     transition: all .3s ease;
+
+                    &.contactoFooter{
+                        position: relative;
+
+                        @include movil0{
+                            left: -.65rem;
+                        }
+
+                        @include movil991{
+                            left: 0;
+                        }
+                    }
 
                     i{
                         width: 30px;
