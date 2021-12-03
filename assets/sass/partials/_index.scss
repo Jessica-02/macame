@@ -82,15 +82,22 @@
 
 
     &__individual{
-        height: 40vh;
+        
         display: flex;
         align-items: center;
         justify-content: center;
         background-size: cover;
         background-position: center center;
         position: relative;
-
         margin-top: 1rem;
+
+        @include movil0{
+            height: 25vh;
+        }
+
+        @include movil768{
+            height: 40vh;
+        }
 
         &::after{
             position: absolute;

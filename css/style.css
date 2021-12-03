@@ -448,7 +448,6 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 }
 
 .categories__individual {
-  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,6 +461,18 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   background-position: center center;
   position: relative;
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 0px) {
+  .categories__individual {
+    height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .categories__individual {
+    height: 40vh;
+  }
 }
 
 .categories__individual::after {
