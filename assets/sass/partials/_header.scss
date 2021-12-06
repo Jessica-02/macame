@@ -125,19 +125,21 @@ header {
                         color: $brown;
                         font-family: $Montserrat;
                         display: block;
+                        font-family: $Cormorant;
+                        font-weight: 500;
                         
-
 
 
                         @include movil0{
                             text-align: left;
-                            font-size: .9rem;
-                            letter-spacing: .2rem;
+                            font-size: 1rem;
+                            letter-spacing: .05rem;
                         }
 
                         @include movil768{
                             text-align: center;
                             border-bottom: 0;
+                            letter-spacing: .05rem;
                         }
 
                         &.borderOut{
