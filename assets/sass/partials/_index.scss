@@ -42,10 +42,6 @@
                 font-weight: 300;
                 transition: all .3s ease;  
 
-                &:hover{
-                    background-color: rgba($white,.5);
-                    transition: all .3s ease;
-                }
             }
 
             .owl-next{
@@ -92,7 +88,7 @@
         margin-top: 1rem;
 
         @include movil0{
-            height: 25vh;
+            height: 30vh;
         }
 
         @include movil768{
@@ -129,7 +125,15 @@
                 z-index: 2;
                 font-family: $Montserrat;
                 text-transform: uppercase;
-                font-weight: 300;
+                font-weight: 400;
+
+                @include movil0{
+                    font-size: 1.8rem;
+                }
+
+                @include movil768{
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -143,18 +147,19 @@
 
     h2{
         text-align: center;
-        font-weight: 400;
+        font-weight: 700;
         color: $grey;
         border-bottom: 3px solid $grey;
         padding-bottom: 2rem;
         margin-top: 2rem;
+        letter-spacing: .3rem;
 
         @include movil0{
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
 
         @include movil768{
-            font-size: 2.5rem
+            font-size: 2rem;
         }
     }
 
@@ -168,17 +173,32 @@
                 color: $grey;
                 h3{
                     font-family: $Montserrat;
-                    font-size: 1rem;
+                    
                     font-weight: 700;
                     color: $grey;
+
+                    @include movil0{
+                        font-size: .8rem;
+                    }
+
+                    @include movil768{
+                        font-size: 1rem;
+                    }
                 }
         
                 .populares__txt{
                     p{
                         
-                        font-size: 1rem;
                         font-weight: 300;
                         margin-top: 1rem;
+
+                        @include movil0{
+                            font-size: .8rem;
+                        }
+    
+                        @include movil768{
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -195,13 +215,8 @@
 
             span{
                 color: rgba($grey,.5);
-                font-size: 5rem;
+                font-size: 3rem;
                 font-weight: 300;
-
-                &:hover{
-                    background-color: rgba($white,.5);
-                    transition: all .3s ease;
-                }
             }
 
             .owl-next{
@@ -249,6 +264,10 @@
     }
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent !important;
+}
+
 .info{
 
     .historia,.anillosCompromiso{
@@ -271,7 +290,6 @@
         }
 
         .txt{
-            max-width: 650px;
             width: 100%;
             padding: 1rem;
 
@@ -284,10 +302,10 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 color: $white;
-                letter-spacing: -.1rem;
+                letter-spacing: .3rem;
 
                 @include movil0{
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
 
                 @include movil768{
@@ -305,13 +323,13 @@
                 letter-spacing: .1rem;
 
                 @include movil0{
-                    line-height: 1.3rem;
-                    font-size: 1rem;
+                    line-height: 1.1rem;
+                    font-size: .8rem;
                 }
 
                 @include movil768{
-                    line-height: 2rem;
-                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -323,7 +341,7 @@
                 text-transform: uppercase;
                 font-size: $Roboto;
                 font-style: italic;
-                font-size: 1.4rem;
+                font-size: 1rem;
                 letter-spacing: .1rem;
                 font-weight: 300;
 
@@ -344,7 +362,7 @@
     }
     .historia{
         @include movil0{
-            min-height: 80vh;
+            min-height: 60vh;
             background-position: top left;
             background-image: url("../assets/img/index/historiaMovil.jpg");
         }
@@ -364,8 +382,19 @@
     }
 
     .anillosCompromiso{
+
+        br{
+            @include movil0{
+                display: block;
+            }
+
+            @include movil768{
+                display: none;
+            }
+        }
+
         @include movil0{
-            background-position: top bottom;
+            background-position: left bottom;
             min-height: 40vh;
             background-image: url("../assets/img/index/anillosCompromisoMovil.jpg");
         }
@@ -396,24 +425,40 @@
 
     h3{
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 700;
         color: $grey;
         border-bottom: 3px solid $grey;
         padding-bottom: 1rem;
+        letter-spacing: .3rem;
+
+        @include movil0{
+            font-size: 1.2rem;
+        }
+
+        @include movil768{
+            font-size: 2rem;
+        }
 
     }
 
     form{
         label{
-            font-size: 1.3rem;
             font-family: $Roboto;
             font-style: italic;
             font-weight: 300;
             margin-top: 1rem;
 
+            @include movil0{
+                font-size: .8rem;
+            }
+
+            @include movil768{
+                font-size: 1rem;
+            }
+
             &.terms{
                 display: block;
-                font-size: 1rem;
+                font-size: .8rem;
                 text-align: right;
             }
         }
@@ -433,11 +478,18 @@
             font-family: $Roboto;
             font-style: italic;
             font-weight: 300;
-            font-size: 1.2rem;
             margin-top: 1rem;
             display: block;
             width: 100%;
-            transition: all .3s ease;;
+            transition: all .3s ease;
+
+            @include movil0{
+                font-size: .8rem;
+            }
+
+            @include movil768{
+                font-size: 1rem;
+            }   
 
             &:hover{
                 background-color: $grey;

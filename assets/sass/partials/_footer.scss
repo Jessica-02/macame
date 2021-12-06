@@ -2,9 +2,16 @@
     margin-top: 2rem;
     h4{
         font-family: $Montserrat;
-        font-weight: 900;
-        font-size: .7rem;
+        font-weight: 700;
+        font-size: 1rem;
         color: $grey;
+        text-transform: uppercase;
+        border-bottom: 2px solid $grey;
+        padding-bottom: .5rem;
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+        
 
         @include movil0{
             text-align: center;
@@ -12,8 +19,8 @@
         }
 
         @include movil1200{
-            margin-top: 0;
-            text-align: left;
+            margin-top: 1rem;
+            text-align: center;
         }
     }
 
@@ -28,16 +35,10 @@
         }
 
         &.listFooter{
+            margin-top: .5rem;
             li{
 
-                @include movil0{
-                    text-align: center;
-                }
-
-                @include movil1200{
-                    text-align: left;
-                }
-
+                text-align: center;
                 a{
                     color: $grey;
                     font-size: .8rem;
@@ -47,13 +48,16 @@
         }
 
         &.socilaFooter{
+            background-color: $grey;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
 
             @include movil0{
                 column-count: 2;
             }
 
             @include movil768{
-                column-count: 2;
+                column-count: 4;
             }
 
             @include movil991{
@@ -66,56 +70,33 @@
                     text-align: center;
                 }
 
-                @include movil1200{
-                    text-align: left;
+                @include movil768{
+                    text-align: center;
                 }
 
+
                 a{
-                    color: $grey;
+                    color: $white;
                     font-family: $Montserrat;
                     font-weight: 300;
                     position: relative;
                     left: 0;
                     transition: all .3s ease;
-
-                    &.contactoFooter{
-                        position: relative;
-
-                        @include movil0{
-                            left: -.65rem;
-                        }
-
-                        @include movil991{
-                            left: 0;
-                        }
+                    
+                    @include movil0{
+                        font-size: .8rem;
+                    }
+        
+                    @include movil768{
+                        font-size: .9rem;
                     }
 
-                    i{
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        background-color: $grey;
-                        color: white;
-                        position: relative;
-                        top: .6rem;
-                        transition: all .3s ease;
-
-                        &::before{
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%,-50%);
-                        }
-                    }
 
                     &:hover{
                         left: 3%;
                         transition: all .3s ease;
-                        color: $black;
+                        color: $brown;
 
-                        i{
-                            background-color: $brown;
-                        }
                     }
                 }
             }

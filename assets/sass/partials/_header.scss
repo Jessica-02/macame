@@ -3,7 +3,7 @@ header {
         margin-top: 1rem;
 
         img {
-            max-width: 130px;
+            max-width: 100px;
             width: 100%;
 
             &.right {
@@ -45,6 +45,7 @@ header {
             i{
                 font-size: 1.5rem;
                 color: $brown;
+                font-weight: 100;
             }
 
             &:focus{
@@ -66,7 +67,7 @@ header {
             .logo {
 
                 @include movil0{
-                    max-width: 150px;
+                    max-width: 90px;
                     width: 100%;
                 }
 
