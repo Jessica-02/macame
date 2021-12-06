@@ -96,3 +96,15 @@ $(document).ready(function(){
             }
         })
 });
+
+
+//FIXES SIDEBAR
+
+jQuery(window).scroll(function() {    
+    var scrollSidebar = jQuery(window).scrollTop();
+    if (scrollSidebar >= 120) {
+        jQuery(".navbar").addClass("fixSidebar");
+    } else {
+        jQuery(".navbar").removeClass("fixSidebar");
+    }
+});

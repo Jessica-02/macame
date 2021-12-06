@@ -64,10 +64,13 @@ header .marcas img, header .marcasMovil img {
 }
 
 header .navbar {
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (min-width: 0px) {
@@ -228,6 +231,19 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   header .marcasMovil {
     display: none;
   }
+}
+
+.fixSidebar {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #666666 !important;
+          box-shadow: 0 0 10px #666666 !important;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .footer {
