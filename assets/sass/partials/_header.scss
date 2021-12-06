@@ -126,12 +126,15 @@ header {
                         font-family: $Montserrat;
                         text-transform: uppercase;
                         display: block;
+                        
 
 
 
                         @include movil0{
                             text-align: left;
-                            border-bottom: 1px solid $brown;
+                            border-bottom: .5px solid $brown;
+                            font-size: .9rem;
+                            letter-spacing: .2rem;
                         }
 
                         @include movil768{
