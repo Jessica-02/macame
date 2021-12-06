@@ -168,14 +168,12 @@ header .navbar .navbar-toggler:focus {
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #c49a6d;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   display: block;
 }
 
 @media only screen and (min-width: 0px) {
   header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: left;
-    border-bottom: 0.5px solid #c49a6d;
     font-size: .9rem;
     letter-spacing: .2rem;
   }
