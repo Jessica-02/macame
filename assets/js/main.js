@@ -1,3 +1,8 @@
+/*loader*/
+$(window).on("load",function(){
+    $(".loader").fadeOut(2000);
+});
+
 //Carousel
 $(document).ready(function(){
 

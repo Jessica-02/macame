@@ -1,0 +1,186 @@
+.singleProduct{
+
+    .imageProduct{
+        img{
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .generalDetails{
+
+        @include movil0{
+            text-align: center;
+        }
+
+        @include movil768{
+            text-align: left;
+        }
+
+        .breadcrumbs{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                font-family: $Cormorant;
+                color: $grey;
+            }
+        }
+
+        .info{
+            .categorie{
+                font-family: $Cormorant;
+                font-size: 1.5rem;
+                color: $grey;
+            }
+
+            .titleProduct{
+                font-family: $Cormorant;
+                font-size: 2rem;
+                color: $black;
+                font-weight: 600;
+            }
+
+            .material{
+                font-family: $Cormorant;
+                font-size: 1.5rem;
+                color: $brown;
+            }
+        }
+
+
+        .contact{
+            ul{
+                list-style: none;
+                column-count: 3;
+                padding: 0;
+                max-width: 200px;
+                width: 100%;
+
+                @include movil0{
+                    margin: 1rem auto;
+                }
+        
+                @include movil768{
+                    margin: initial;
+                }
+
+                li{
+                    a{
+                        display: inline-block;
+                        background-color: $grey;
+                        text-decoration: none;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: relative;
+                        transition: all .5s ease;
+
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            color: $white;
+                            font-size: 1rem;
+                        }
+
+                        &:hover{
+                            background-color: $brown;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .description{
+        background-color: $grey-light;
+        padding: 2rem;
+        text-align: center;
+        font-family: $Cormorant;
+
+        .title{
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .content{
+            font-size: 1.2rem;
+        }
+    }
+
+    .detailsOfPiece{
+
+        @include movil0{
+            text-align: center;
+        }
+
+        @include movil768{
+            text-align: left;
+        }
+
+        h4{
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-family: $Cormorant; 
+            font-weight: 600;
+            font-size: 1.5rem; 
+        }
+
+        h5{
+            font-family: $Cormorant; 
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: $grey; 
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        p{
+
+            font-family: $Cormorant; 
+            font-size: 1.2rem;
+            color: $grey;
+            margin-bottom: .5rem;
+            span{
+                color: $brown;
+            }
+        }
+    }
+}
+
+.imagenes{
+    img{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+.similarProducts{
+    h4{
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-family: $Cormorant; 
+        font-weight: 600;
+        font-size: 1.5rem; 
+        border-bottom: .5px solid $grey;
+        padding-bottom: 1rem;
+    }
+    .owl-carousel{
+        .item{
+            a{
+                text-decoration: none;
+                text-align: center;
+                font-family: $Cormorant; 
+                color: $grey;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.padding{
+    padding: 1rem 2rem;
+}

@@ -938,3 +938,505 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   display: block;
   text-decoration: none;
 }
+
+.relojeriaBanner {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../assets/img/relojeria/marcas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.relojeriaBanner::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: linear-gradient(6deg, rgba(0, 0, 0, 0.673004) 0%, rgba(0, 0, 0, 0.496534) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.relojeriaBanner h1 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  z-index: 2;
+  color: #fff;
+  -webkit-filter: drop-shadow(0px 0px 4px #000);
+          filter: drop-shadow(0px 0px 4px #000);
+}
+
+.relojeriaBanner p {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.relojeriaPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30vh;
+  background-color: #e6e6e6;
+}
+
+.relojeriaPrincipal a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.relojeriaPrincipal a img {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.relojeriaPrincipal a:hover {
+  bottom: 3%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 0 0 10px #666666;
+          box-shadow: 0 0 10px #666666;
+}
+
+.relojeriaCategories {
+  margin-top: 2rem;
+}
+
+.relojeriaCategories .brand {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.relojeriaCategories .brand::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: linear-gradient(6deg, rgba(0, 0, 0, 0.673004) 0%, rgba(0, 0, 0, 0.496534) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.relojeriaCategories .brand .fondo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.relojeriaCategories .brand .logo {
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+  z-index: 2;
+  right: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  -webkit-filter: drop-shadow(0px 0px 4px #000);
+          filter: drop-shadow(0px 0px 4px #000);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.relojeriaCategories .brand:hover::after {
+  opacity: .5;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.relojeriaCategories .brand:hover .fondo {
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.relojeriaCategories .brand:hover .logo {
+  max-width: 100px;
+  right: 20%;
+  bottom: 10%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.bannerCategorie {
+  height: 50vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.bannerCategorie::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: linear-gradient(6deg, rgba(0, 0, 0, 0.673004) 0%, rgba(0, 0, 0, 0.496534) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.bannerCategorie img {
+  position: relative;
+  z-index: 2;
+  -webkit-filter: drop-shadow(0 0 10px #000);
+          filter: drop-shadow(0 0 10px #000);
+}
+
+.bannerCategorie.rolex {
+  background-image: url("../assets/img/relojeria/fondo-rolex.jpg");
+}
+
+.categorie {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 0px) {
+  .categorie .sidebar-filter {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .categorie .sidebar-filter {
+    display: block;
+  }
+}
+
+.categorie .sidebar-filter h3 {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  color: #666666;
+  padding-bottom: .5rem;
+  border-bottom: .5px solid grey;
+}
+
+.categorie .sidebar-filter h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+.categorie .sidebar-filter label {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  color: #666666;
+}
+
+.categorie .sidebar-filter label input[type="checkbox"] {
+  border-radius: 0;
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+
+.categorie .sidebar-filter.movil {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  z-index: 99999;
+  -webkit-box-shadow: 0 0 5px #666666;
+          box-shadow: 0 0 5px #666666;
+}
+
+@media only screen and (min-width: 0px) {
+  .categorie .sidebar-filter.movil {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .categorie .sidebar-filter.movil {
+    display: none;
+  }
+}
+
+.categorie .sidebar-filter.movil label {
+  display: block;
+}
+
+.categorie .sidebar-filter.movil .btn {
+  background-color: #e6e6e6;
+  border-color: #666666;
+  color: #666666;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  border-radius: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.categorie .sidebar-filter.movil .btn i {
+  font-weight: 300;
+}
+
+.categorie .sidebar-filter.movil .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.categorie .sidebar-filter.movil .btn:hover {
+  background-color: #666666;
+  color: #fff;
+}
+
+.categorie .producto {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #666666;
+}
+
+.categorie .producto h3 {
+  padding-top: 1rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.categorie .producto p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.categorie .producto:hover {
+  bottom: 2%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #e6e6e6;
+}
+
+.singleProduct .imageProduct img {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 0px) {
+  .singleProduct .generalDetails {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .singleProduct .generalDetails {
+    text-align: left;
+  }
+}
+
+.singleProduct .generalDetails .breadcrumbs a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  color: #666666;
+}
+
+.singleProduct .generalDetails .info .categorie {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #666666;
+}
+
+.singleProduct .generalDetails .info .titleProduct {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.singleProduct .generalDetails .info .material {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #c49a6d;
+}
+
+.singleProduct .generalDetails .contact ul {
+  list-style: none;
+  -webkit-column-count: 3;
+          column-count: 3;
+  padding: 0;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 0px) {
+  .singleProduct .generalDetails .contact ul {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .singleProduct .generalDetails .contact ul {
+    margin: initial;
+  }
+}
+
+.singleProduct .generalDetails .contact ul li a {
+  display: inline-block;
+  background-color: #666666;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.singleProduct .generalDetails .contact ul li a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.singleProduct .generalDetails .contact ul li a:hover {
+  background-color: #c49a6d;
+}
+
+.singleProduct .description {
+  background-color: #e6e6e6;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.singleProduct .description .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.singleProduct .description .content {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 0px) {
+  .singleProduct .detailsOfPiece {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .singleProduct .detailsOfPiece {
+    text-align: left;
+  }
+}
+
+.singleProduct .detailsOfPiece h4 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.singleProduct .detailsOfPiece h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #666666;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.singleProduct .detailsOfPiece p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: .5rem;
+}
+
+.singleProduct .detailsOfPiece p span {
+  color: #c49a6d;
+}
+
+.imagenes img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.similarProducts h4 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 0.5px solid #666666;
+  padding-bottom: 1rem;
+}
+
+.similarProducts .owl-carousel .item a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  color: #666666;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.padding {
+  padding: 1rem 2rem;
+}
