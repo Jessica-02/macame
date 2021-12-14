@@ -1,6 +1,6 @@
 /*loader*/
 $(window).on("load",function(){
-    $(".loader").fadeOut(2000);
+    $(".loader").fadeOut(3500);
 });
 
 //Carousel
@@ -52,7 +52,8 @@ $(document).ready(function(){
                 },
 
                 900:{
-                    items:1                },
+                    items:1                
+                },
 
                 1200:{
                     items:1
