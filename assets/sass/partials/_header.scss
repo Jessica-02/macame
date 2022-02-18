@@ -1,5 +1,7 @@
 header {
-    .marcas,.marcasMovil {
+
+    .marcas,
+    .marcasMovil {
         margin-top: 1rem;
 
         img {
@@ -35,22 +37,22 @@ header {
         padding: 1rem;
         transition: all .3s ease;
 
-        @include movil0{
+        @include movil0 {
             box-shadow: 0 0 10px $grey;
         }
 
-        @include movil768{
+        @include movil768 {
             box-shadow: none;
         }
 
-        .navbar-toggler{
-            i{
+        .navbar-toggler {
+            i {
                 font-size: 1.5rem;
                 color: $brown;
                 font-weight: 100;
             }
 
-            &:focus{
+            &:focus {
                 box-shadow: 0 0 2px 0rem $brown;
             }
         }
@@ -58,7 +60,7 @@ header {
 
         .navbar-brand {
 
-            @include movil0{
+            @include movil0 {
                 display: block;
             }
 
@@ -68,7 +70,7 @@ header {
 
             .logo {
 
-                @include movil0{
+                @include movil0 {
                     max-width: 90px;
                     width: 100%;
                 }
@@ -78,7 +80,7 @@ header {
                     width: 100%;
                 }
 
-                
+
             }
         }
 
@@ -90,7 +92,7 @@ header {
 
             .navbar-nav {
 
-                @include movil0{
+                @include movil0 {
                     padding-top: 1rem;
                     padding-bottom: 1rem;
                 }
@@ -129,22 +131,22 @@ header {
                         display: block;
                         font-family: $Cormorant;
                         font-weight: 500;
-                        
 
 
-                        @include movil0{
+
+                        @include movil0 {
                             text-align: left;
                             font-size: 1rem;
                             letter-spacing: .05rem;
                         }
 
-                        @include movil768{
+                        @include movil768 {
                             text-align: center;
                             border-bottom: 0;
                             letter-spacing: .05rem;
                         }
 
-                        &.borderOut{
+                        &.borderOut {
                             border-bottom: 0;
                         }
 
@@ -161,37 +163,37 @@ header {
         }
     }
 
-    .marcas{
-        @include movil0{
+    .marcas {
+        @include movil0 {
             display: none;
         }
 
-        @include movil768{
+        @include movil768 {
             display: block;
         }
     }
 
-    .marcasMovil{
-        @include movil0{
+    .marcasMovil {
+        @include movil0 {
             display: block;
 
         }
 
-        .right{
-            @include movil0{
+        .right {
+            @include movil0 {
                 float: right;
-    
+
             }
         }
 
-        @include movil768{
+        @include movil768 {
             display: none;
         }
 
     }
 }
 
-.fixSidebar{
+.fixSidebar {
     position: fixed !important;
     width: 100%;
     top: 0;
@@ -201,3 +203,121 @@ header {
     box-shadow: 0 0 10px $grey !important;
     transition: all .3s ease;
 }
+
+.dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+}
+
+//megamenu
+
+.navbar {
+    .megamenu {
+        padding: 1rem;
+        background-color: rgba($white, .95);
+        border-radius: 0;
+        border: 0;
+    }
+
+
+}
+
+.col-megamenu {
+    .title {
+        color: $brown;
+        font-family: $Montserrat;
+        display: block;
+        font-family: $Cormorant;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    ul {
+        li {
+            a {
+                color: $brown;
+                font-family: $Montserrat;
+                display: block;
+                font-family: $Cormorant;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+    .navbar .has-megamenu {
+        position: static !important;
+    }
+
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px) {
+
+    .navbar.fixed-top .navbar-collapse,
+    .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    }
+}
+
+/* ============ mobile view .end// ============ */
