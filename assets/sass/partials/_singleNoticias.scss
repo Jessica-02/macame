@@ -1,0 +1,93 @@
+.noticia{
+    margin-top: 3rem;
+    .content{
+        .image{
+            max-width: 450px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .title{
+            font-family: $Cormorant;
+            margin-top: 1rem;
+        }
+
+        .date{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            max-width: 250px;
+            width: 100%;
+
+            .calendar{
+                font-family: $Cormorant;
+            }
+
+            .category{
+                font-family: $Cormorant;
+            }
+        }
+
+        .text{
+            p{
+                font-family: $Montserrat;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+        }
+
+        .share{
+            border-bottom: 1px solid $black;
+            padding: 2rem .5rem;
+
+            ul{
+                margin-top: 1rem;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 0;
+                max-width: 400px;
+                align-items: center;
+                width: 100%;
+                font-family: $Cormorant;
+
+                @include movil0{
+                    margin: 1rem auto;
+                }
+        
+                @include movil768{
+                    margin: initial;
+                }
+
+                li{
+                    a{
+                        display: inline-block;
+                        background-color: $grey;
+                        text-decoration: none;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        position: relative;
+                        transition: all .5s ease;
+
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            color: $white;
+                            font-size: .8rem;
+                        }
+
+                        &:hover{
+                            background-color: $brown;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

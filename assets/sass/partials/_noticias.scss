@@ -1,0 +1,71 @@
+.noticias{
+    margin-top: 2rem;
+
+    .card{
+        .card-body{
+            .card-title{
+                font-family: $Cormorant;
+                font-size: 1.5rem;
+
+            }
+
+            .card-text{
+                font-family: $Cormorant;
+            }
+        }
+
+        p{
+            font-family: $Cormorant;
+        }
+
+        .readMore{
+            text-decoration: none;
+            color: $black;
+            font-family: $Cormorant;
+            font-size: 1.5rem;
+            position: relative;
+            left: 0;
+            transition: all .5s ease;
+
+            &:hover{
+                left: 2%;
+                color: $brown;
+            }
+            
+
+            i{
+                font-size: .5rem;
+            }
+        }
+
+        &.backgroundBrown{
+            background-color: $brown;
+            color: $white;
+
+            .text-muted{
+                color: $white !important;
+            }
+
+            .readMore{
+                text-decoration: none;
+                color: $white;
+                font-family: $Cormorant;
+                font-size: 1.5rem;
+                position: relative;
+                left: 0;
+                transition: all .5s ease;
+    
+                &:hover{
+                    left: 2%;
+                }
+                
+    
+                i{
+                    font-size: .5rem;
+                }
+            }
+        }
+
+        
+    }
+}
