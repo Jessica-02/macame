@@ -9,7 +9,7 @@ header {
             width: 100%;
 
             &.right {
-                @include movil768 {
+                @include movil991 {
                     float: right;
                 }
             }
@@ -22,7 +22,7 @@ header {
             display: none;
         }
 
-        @include movil768 {
+        @include movil991 {
             display: block;
             max-width: 250px;
             width: 100%;
@@ -41,7 +41,7 @@ header {
             box-shadow: 0 0 10px $grey;
         }
 
-        @include movil768 {
+        @include movil991 {
             box-shadow: none;
         }
 
@@ -64,7 +64,7 @@ header {
                 display: block;
             }
 
-            @include movil768 {
+            @include movil991 {
                 display: none;
             }
 
@@ -75,7 +75,7 @@ header {
                     width: 100%;
                 }
 
-                @include movil768 {
+                @include movil991 {
                     max-width: 350px;
                     width: 100%;
                 }
@@ -85,8 +85,9 @@ header {
         }
 
         .navbar-collapse {
-            @include movil768 {
-                justify-content: center;
+            @include movil991 {
+                justify-content: space-between;
+
 
             }
 
@@ -97,20 +98,23 @@ header {
                     padding-bottom: 1rem;
                 }
 
-                @include movil768 {
+                @include movil991 {
                     padding-top: 0rem;
                     padding-bottom: 0rem;
                     margin-top: 1rem;
-                    max-width: 1200px;
-                    width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    
                 }
 
+                
+
+
+
                 .nav-item {
-                    @include movil768 {
+                    @include movil991 {
                         border-right: 1px solid $brown;
                         width: 100%;
+                        max-width: 120px;
 
                         &:last-child {
                             border-right: none;
@@ -140,20 +144,51 @@ header {
                             letter-spacing: .05rem;
                         }
 
-                        @include movil768 {
+                        @include movil991 {
                             text-align: center;
                             border-bottom: 0;
                             letter-spacing: .05rem;
+                            
                         }
 
                         &.borderOut {
                             border-bottom: 0;
                         }
 
+                        img{
+                            max-width: 24px;
+                            width: 100%;
+                            margin: 0 auto;
+                            position: relative;
+                            transition: all .3s ease;
+                            bottom: 0;
+
+                            &:hover{
+                                bottom: .2rem;
+                            }
+                        }
+
 
                         &:hover {
                             transition: all .3s ease;
                             color: $grey;
+                        }
+                    }
+                }
+
+                &:nth-child(1){
+                    justify-content: flex-start;
+                    width: 40%;
+
+                }
+
+                &:nth-child(2){
+                    justify-content: flex-end;
+                    width: 60%;
+
+                    .nav-item{
+                        &:nth-child(4){
+                            border-right: none;
                         }
                     }
                 }
@@ -168,7 +203,7 @@ header {
             display: none;
         }
 
-        @include movil768 {
+        @include movil991 {
             display: block;
         }
     }
@@ -186,7 +221,7 @@ header {
             }
         }
 
-        @include movil768 {
+        @include movil991 {
             display: none;
         }
 

@@ -1,24 +1,36 @@
-.noticias{
+.noticias {
     margin-top: 2rem;
 
-    .card{
-        .card-body{
-            .card-title{
+    .card {
+        display: block;
+        text-decoration: none;
+        color: $black;
+        position: relative;
+        bottom: 0;
+        transition: all .5s ease;
+
+        &:hover {
+            bottom: .5rem;
+            transition: all .5s ease;
+        }
+
+        .card-body {
+            .card-title {
                 font-family: $Cormorant;
                 font-size: 1.5rem;
 
             }
 
-            .card-text{
+            .card-text {
                 font-family: $Cormorant;
             }
         }
 
-        p{
+        p {
             font-family: $Cormorant;
         }
 
-        .readMore{
+        .readMore {
             text-decoration: none;
             color: $black;
             font-family: $Cormorant;
@@ -27,26 +39,26 @@
             left: 0;
             transition: all .5s ease;
 
-            &:hover{
+            &:hover {
                 left: 2%;
                 color: $brown;
             }
-            
 
-            i{
+
+            i {
                 font-size: .5rem;
             }
         }
 
-        &.backgroundBrown{
+        &.backgroundBrown {
             background-color: $brown;
             color: $white;
 
-            .text-muted{
+            .text-muted {
                 color: $white !important;
             }
 
-            .readMore{
+            .readMore {
                 text-decoration: none;
                 color: $white;
                 font-family: $Cormorant;
@@ -54,18 +66,18 @@
                 position: relative;
                 left: 0;
                 transition: all .5s ease;
-    
-                &:hover{
+
+                &:hover {
                     left: 2%;
                 }
-                
-    
-                i{
+
+
+                i {
                     font-size: .5rem;
                 }
             }
         }
 
-        
+
     }
 }
