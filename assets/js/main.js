@@ -108,7 +108,7 @@ $(document).ready(function(){
 
 jQuery(window).scroll(function() {    
     var scrollSidebar = jQuery(window).scrollTop();
-    if (scrollSidebar >= 120) {
+    if (scrollSidebar >= 20) {
         jQuery(".navbar").addClass("fixSidebar");
     } else {
         jQuery(".navbar").removeClass("fixSidebar");
