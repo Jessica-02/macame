@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -1446,6 +1446,33 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   text-align: center;
 }
 
+/*BTN-SLIDER*/
+.rolex-btn a{
+  position: absolute;
+  background-color: #127749;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  text-decoration: none;
+  bottom: 150px;
+  left: 260px;
+}
+.rolex-title{
+  position: absolute;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 60px;
+  text-decoration: none;
+  bottom: 180px;
+  left: 228px;
+  text-align: center;
+  font-family:"Cormorant Garamond", serif;
+}
+.position-2{
+  left: 142px;
+}
+
 .padding {
   padding: 1rem 2rem;
 }
@@ -1584,6 +1611,34 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
 @media only screen and (min-width: 768px) {
   .noticia .content .share ul {
     margin: initial;
+  }
+}
+@media only screen and (max-width:768px){
+  /*BTN-SLIDER*/
+  .rolex-btn a{
+    position: absolute;
+    background-color: #127749;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    bottom: 35px;
+    left: 155px;
+  }
+  .rolex-title{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 48px;
+    text-decoration: none;
+    bottom: 70px;
+    left: 142px;
+    text-align: center;
+    
+  }
+  .position-2{
+    left: 70px;
   }
 }
 .noticia .content .share ul li a {
