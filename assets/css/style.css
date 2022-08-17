@@ -26,6 +26,9 @@ p {
 .sinPadding {
   padding: 0;
 }
+a{
+  text-decoration: none !important;
+}
 
 .loader {
   width: 100%;
@@ -608,20 +611,20 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   background-color: rgba(0, 0, 0, 0.6);
 }
 .categories__individual--relojeria {
-  background-image: url("../assets/img/index/relojeria.jpg");
+  background-image: url("../img/index/relojeria.jpg");
 }
 .categories__individual--joyeria {
-  background-image: url("../assets/img/index/joyeria.jpg");
+  background-image: url("../img/index/joyeria.jpg");
 }
 .categories__individual--accesorios {
-  background-image: url("../assets/img/index/accesorios.jpg");
+  background-image: url("../img/index/accesorios.jpg");
 }
 .categories__individual a {
   display: block;
   text-decoration: none;
 }
-.categories__individual a h1 {
-  color: #fff;
+.categories__individual .title-categories {
+  color: white !important;
   position: relative;
   z-index: 2;
   font-family: "Montserrat", sans-serif;
@@ -857,7 +860,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   .info .historia {
     min-height: 60vh;
     background-position: top left;
-    background-image: url("../assets/img/index/historiaMovil.jpg");
+    background-image: url("../img/index/historiaMovil.jpg");
   }
 }
 @media only screen and (min-width: 768px) {
@@ -866,7 +869,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-image: url("../assets/img/index/historia.jpg");
+    background-image: url("../img/index/historia.jpg");
   }
 }
 @media only screen and (min-width: 991px) {
@@ -876,7 +879,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background-image: url("../assets/img/index/historia.jpg");
+    background-image: url("../img/index/historia.jpg");
   }
 }
 @media only screen and (min-width: 0px) {
@@ -893,7 +896,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   .info .anillosCompromiso {
     background-position: left bottom;
     min-height: 40vh;
-    background-image: url("../assets/img/index/anillosCompromisoMovil.jpg");
+    background-image: url("../img/index/slider1Movil2.png");
   }
 }
 @media only screen and (min-width: 768px) {
@@ -902,7 +905,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-image: url("../assets/img/index/anillosCompromiso.jpg");
+    background-image: url("../img/index/anillosCompromiso.jpg");
   }
 }
 @media only screen and (min-width: 991px) {
@@ -912,7 +915,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-image: url("../assets/img/index/anillosCompromiso.jpg");
+    background-image: url("../img/index/anillosCompromiso.jpg");
   }
 }
 
@@ -1463,11 +1466,12 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   padding: 10px;
   border-radius: 50px;
   font-size: 60px;
-  text-decoration: none;
+  text-decoration: none !important;
   bottom: 180px;
   left: 228px;
   text-align: center;
   font-family:"Cormorant Garamond", serif;
+  color: #000 !important;
 }
 .position-2{
   left: 142px;
