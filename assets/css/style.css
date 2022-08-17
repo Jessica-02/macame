@@ -758,7 +758,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   background: transparent !important;
 }
 
-.info .historia, .info .anillosCompromiso {
+.info .banner1, .info .banner2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,7 +767,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   padding: 0 2rem;
 }
 @media only screen and (min-width: 0px) {
-  .info .historia, .info .anillosCompromiso {
+  .info .banner1, .info .banner2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -777,7 +777,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .historia, .info .anillosCompromiso {
+  .info .banner1, .info .banner2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -787,16 +787,16 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
     min-height: 60vh;
   }
 }
-.info .historia .txt, .info .anillosCompromiso .txt {
+.info .banner1 .txt, .info .banner2 .txt {
   width: 100%;
   padding: 1rem;
 }
 @media only screen and (min-width: 768px) {
-  .info .historia .txt, .info .anillosCompromiso .txt {
+  .info .banner1 .txt, .info .banner2 .txt {
     max-width: 500px;
   }
 }
-.info .historia .txt h2, .info .anillosCompromiso .txt h2 {
+.info .banner1 .txt h2, .info .banner2 .txt h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -804,16 +804,16 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   letter-spacing: 0.3rem;
 }
 @media only screen and (min-width: 0px) {
-  .info .historia .txt h2, .info .anillosCompromiso .txt h2 {
+  .info .banner1 .txt h2, .info .banner2 .txt h2 {
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .historia .txt h2, .info .anillosCompromiso .txt h2 {
+  .info .banner1 .txt h2, .info .banner2 .txt h2 {
     font-size: 2rem;
   }
 }
-.info .historia .txt p, .info .anillosCompromiso .txt p {
+.info .banner1 .txt p, .info .banner2 .txt p {
   color: #fff;
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
@@ -823,18 +823,18 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   letter-spacing: 0.1rem;
 }
 @media only screen and (min-width: 0px) {
-  .info .historia .txt p, .info .anillosCompromiso .txt p {
+  .info .banner1 .txt p, .info .banner2 .txt p {
     line-height: 1.1rem;
     font-size: 0.8rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .historia .txt p, .info .anillosCompromiso .txt p {
+  .info .banner1 .txt p, .info .banner2 .txt p {
     line-height: 1.8rem;
     font-size: 1rem;
   }
 }
-.info .historia .txt a, .info .anillosCompromiso .txt a {
+.info .banner1 .txt a, .info .banner2 .txt a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -845,26 +845,26 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   letter-spacing: 0.1rem;
   font-weight: 300;
 }
-.info .historia .txt a i, .info .anillosCompromiso .txt a i {
+.info .banner1 .txt a i, .info .banner2 .txt a i {
   font-weight: 300;
   font-style: italic;
 }
 @media only screen and (min-width: 768px) {
-  .info .historia .txt a, .info .anillosCompromiso .txt a {
+  .info .banner1 .txt a, .info .banner2 .txt a {
     float: right;
     position: relative;
     right: 2rem;
   }
 }
 @media only screen and (min-width: 0px) {
-  .info .historia {
+  .info .banner1 {
     min-height: 60vh;
     background-position: top left;
     background-image: url("../img/index/historiaMovil.jpg");
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .historia {
+  .info .banner1 {
     background-position: right bottom;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -873,7 +873,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   }
 }
 @media only screen and (min-width: 991px) {
-  .info .historia {
+  .info .banner1 {
     min-height: 60vh;
     background-position: left bottom;
     -webkit-box-pack: end;
@@ -883,24 +883,24 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   }
 }
 @media only screen and (min-width: 0px) {
-  .info .anillosCompromiso br {
+  .info .banner2 br {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .anillosCompromiso br {
+  .info .banner2 br {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) {
-  .info .anillosCompromiso {
+  .info .banner2 {
     background-position: left bottom;
     min-height: 40vh;
     background-image: url("../img/index/slider1Movil2.png");
   }
 }
 @media only screen and (min-width: 768px) {
-  .info .anillosCompromiso {
+  .info .banner2 {
     background-position: left bottom;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -909,7 +909,7 @@ header .navbar .navbar-collapse .navbar-nav:nth-child(2) .nav-item:nth-child(4) 
   }
 }
 @media only screen and (min-width: 991px) {
-  .info .anillosCompromiso {
+  .info .banner2 {
     min-height: 60vh;
     background-position: right bottom;
     -webkit-box-pack: start;
